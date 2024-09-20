@@ -3,4 +3,15 @@ project(addDigits)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(addDigits algorithms/cpp/addDigits/addDigits.cpp)
+option(BUILD_TESTS "Build tests" ON)
+
+if(BUILD_TESTS)
+  enable_testing()
+  add_executable(check tests/tests.cpp)
+  include_directories(./)
+  target_link_libraries(check gtest gtest_main)
+endif()
+set(SOURCES
+    addDigits.cpp
+)
+add_executable(addDigits addDigits.cpp)
