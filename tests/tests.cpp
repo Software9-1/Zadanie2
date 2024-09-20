@@ -1,4 +1,3 @@
-#include <gtest/gtest.h>
 #include "addDigits.cpp"
 #include <stdio.h>
 #include <stdlib.h>
