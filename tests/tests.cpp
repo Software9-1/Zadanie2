@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "addDigits.cpp"
+#include "addDigits.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
