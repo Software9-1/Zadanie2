@@ -3,4 +3,4 @@ project(addDigits)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(addDigits addDigits.cpp)
+add_executable(addDigits algorithms/cpp/addDigits/addDidgits.cpp)
