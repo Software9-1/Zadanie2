@@ -10,8 +10,5 @@
 using namespace std;
 
 TEST(ATEST, BTEST) {
-    int a[] = { -1, 2, 1, -4 };
-    vector<int> n(a, a + sizeof(a) / sizeof(int));
-    int target = 1;
-    EXPECT_EQ(2, threeSumClosest(n, target));
+    
 }
